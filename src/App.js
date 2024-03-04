@@ -28,7 +28,7 @@ export default function App() {
       setOperationFlag(true);
     }
 
-    if (operatorInput === "/") {
+    if (operatorInput === "÷") {
       setTotalValue(Number(totalValue) / Number(currentValue));
       setOperationFlag(true);
     }

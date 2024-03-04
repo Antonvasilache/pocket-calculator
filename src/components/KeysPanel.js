@@ -6,7 +6,7 @@ export function KeysPanel({
 }) {
   return (
     <div className="calculator__keys">
-      <button onClick={onHandleReset} className="calculator__key--ac">
+      <button onClick={onHandleReset} className="calculator__key">
         AC
       </button>
       <button onClick={onHandleAbsolute} className="calculator__key">
@@ -20,11 +20,11 @@ export function KeysPanel({
         %
       </button>
       <button
-        value="/"
+        value="÷"
         onClick={onHandleOperatorInput}
-        className="calculator__key"
+        className="calculator__key operator"
       >
-        /
+        ÷
       </button>
       <button
         value="1"
@@ -51,7 +51,7 @@ export function KeysPanel({
       <button
         value="x"
         onClick={onHandleOperatorInput}
-        className="calculator__key"
+        className="calculator__key operator"
       >
         x
       </button>
@@ -81,7 +81,7 @@ export function KeysPanel({
       <button
         value="-"
         onClick={onHandleOperatorInput}
-        className="calculator__key"
+        className="calculator__key operator"
       >
         -
       </button>
@@ -110,7 +110,7 @@ export function KeysPanel({
       <button
         value="+"
         onClick={onHandleOperatorInput}
-        className="calculator__key"
+        className="calculator__key operator"
       >
         +
       </button>
@@ -132,7 +132,7 @@ export function KeysPanel({
       <button
         value="="
         onClick={onHandleOperatorInput}
-        className="calculator__key--result"
+        className="calculator__key operator"
       >
         =
       </button>
